@@ -8,6 +8,11 @@ import 'package:state_demo/models/data_model.dart';
 
 class LogicState extends ChangeNotifier {
   LogicState();
+  
+  // on init methods can be called when you initialize your Provider
+  //  LogicState(){
+  //  fetchData(); like this
+  // }
 
   final _dataUrl = Uri.parse("https://jsonplaceholder.typicode.com/todos");
   bool _isFetching = false;
